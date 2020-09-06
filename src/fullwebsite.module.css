@@ -1,0 +1,111 @@
+.navbar {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: rgb(0, 0, 0);
+}
+
+.title img{
+   width: 80px;
+   padding: 10px;
+}
+
+form {
+   flex: 1;
+   display: flex;
+   padding: 10px;
+   justify-content: space-around;
+   align-items: center;
+}
+form input[type="search"]{
+   outline: none;
+   border: none;
+   padding: 10px 20px;
+   width: 80%;
+   margin: 10px;
+   font-family: 'Fira Code', monospace;
+   border-radius: 50px;
+}
+
+
+form input[type="submit"]{
+   width: 120px;
+   outline: none;
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
+   background: linear-gradient(to right, cornflowerblue,royalblue);
+   color: white;
+   font-size: 15px;
+   height: 30px;
+   font-family: 'Fira Code', monospace;
+}
+
+form input[type="submit"]:active {
+   background: linear-gradient(to left, cornflowerblue,royalblue);
+}
+
+.recipe {
+   border-radius: 5px;
+   background-color: rgb(255, 207, 103);
+   text-align: center;
+   padding: 15px;
+   box-shadow: 3px 4px 10px #ddd;
+   cursor: pointer;
+   margin: 20px auto 0px;
+   width: 95%;
+}
+
+
+.recipeName {
+   font-weight: bold;
+   font-size: 26px;
+}
+
+.recipe img {
+   width: 200px;
+   height: 200px;
+   display: block;
+   margin: auto;
+   padding: 20px;
+   border-radius: 45px;
+}
+
+.calories,.ingredientsName {
+   font-weight: bold;
+   font-size: 20px;
+   padding: 20px;
+}
+
+.ingredients {
+   background-color: wheat;
+}
+
+.ingredient {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 20px;
+}
+
+.ingredientName {
+   flex: 1;
+}
+.ingredientImage {
+   flex: 1;
+   /* background-color: darkorange; */
+}
+
+.ingredient img {
+   width: 100px;
+   height: 100px;
+}
+
+@media screen and (max-width:500px) {
+   .navbar {
+      flex-direction: column;
+   }
+   .title img {
+      padding: 0;
+   }
+}
