@@ -30,7 +30,7 @@ export default function FullWebsite() {
    },[])
 
    return (
-      <>
+      <div>
          <div className={style.navbar}>
             <div className={style.title}>
                <img src={require('../images/food.png')} alt="Food" />
@@ -44,7 +44,7 @@ export default function FullWebsite() {
          <div className={style.container}>
             {results.map((recipe, index) => <Recipe key={index} info={recipe} />)}
          </div>
-      </>
+      </div>
    )
 }
 
